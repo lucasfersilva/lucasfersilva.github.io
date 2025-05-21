@@ -2,22 +2,22 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'lucasfersilva', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: 'Projetos Github',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        limit: 6, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -29,113 +29,150 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Meus Projetos',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Implantação Zabbix',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Fui responsável pela implantação do Zabbix nas empresas Didatica e Modernização. Diminuímos em 70% as falhas e quedas, hoje mantemos o mínimo 99.5% de disponibilidade de servidores.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'https://i.ibb.co/5D6XN37/Clean-Shot-2025-05-20-at-01-46-53-2x.png',
+          link:null
+        },
+        {
+          title: 'Migração Para Cloud Modernização Pública',
+          description:
+            'Participei da modernização da infraestrutura da empresa por meio da migração dos servidores para a IBM Cloud. A iniciativa envolveu: Migração de 80 servidores de aplicação, Transferência de 3 servidores de banco de dados, cada um com 20 instâncias de SQL Server  ',
+          imageUrl:
+            'https://i.ibb.co/R4Pf7s1r/72f33312f662415bc296afd8f3727a95cb449f3767a7d265bc8bd74142f3608c.png',
+          link: null,
+        },
+        
+        {
+          title: 'Migração Para Cloud Didatica Digital',
+          description:
+            'Fui responsável pela migração da Didática Digital para a nuvem, incluindo 10 servidores de aplicação e um de banco de dados, além da implantação de VPN para acesso seguro e monitoramento 24/7 via Zabbix.',
+          imageUrl:
+            'https://i.ibb.co/kscfjc7y/f2919432abb9ba98812e2161c59227c1a05d16f9c977cf8f1b5ab5887660ed80.png',
           link: 'https://example.com',
         },
         {
-          title: 'Project Name',
+          title: 'Implantação De Wazuh',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'https://wazuh.com/wp-content/themes/wazuh-v3/assets/images/home/siem-dashboard.png?ver=1744815409521',
           link: 'https://example.com',
         },
+        {
+          title: 'Implantação Fortigate',
+          description:
+            'Implementei a solução de segurança FortiGate em 120 servidores com o objetivo de reforçar o controle de tráfego e proteger os serviços corporativos contra acessos não autorizados. Também configuramos o FortiClient VPN para permitir conexões seguras e criptografadas aos ambientes internos, garantindo acesso remoto confiável aos servidores e sistemas da empresa.',
+          imageUrl:
+            'https://i.ibb.co/R4Pf7s1r/72f33312f662415bc296afd8f3727a95cb449f3767a7d265bc8bd74142f3608c.png',
+          link: 'https://example.com',
+        },
+        {
+          title: 'Implantação Fortiweb',
+          description:
+            'Implantei o WAF Fortiweb em varias aplicações da Modernização para reforçar a segurança dos sistemas e consequentemente da infraestrutura.',
+          imageUrl:
+            'https://tisec.com.br/wp-content/uploads/2025/01/fortinet-640x640.webp',
+          link: 'https://example.com',
+        }
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio de Lucas Fernandes',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    skype: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    linkedin: 'lucasde-oliveira-fernandes-silva',
+    instagram: 'lucasfernsil',
+    //youtube: '', // example: 'pewdiepie'
+    medium: 'lucasmatdlx',
+    website: 'https://www.lucasfersilva.github.io/',
+    phone: '+55(21)996017319',
+    email: 'lucasmatdlx@gmail.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
+    'Python',
+    'Zabbix',
+    'Docker',
+    'Hyper-v',
+    'VMWare',
+    'Fortigate',
+    'Fortiweb',
+    'Microsoft SQL-Server',
     'PostgreSQL',
     'Git',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Java',
+    'Javascript',
+    'Ansible',
+    'Bash',
   ],
   experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+    { 
+      company: 'Modernização Pública',
+      position: 'Gerente de Projetos de Infraestrutura',
+      from: 'Fevereiro 2020',
+      to: 'Presente',
+      companyLink: 'https://www.modernizacao.com.br/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Didática Digital',
+      position: 'Consultor de TI',
+      from: 'Fevereiro 2022',
+      to: 'Presente',
+      companyLink: 'https://www.didaticadigital.com.br/',
+    },
+    {
+      company: 'Upwork',
+      position: 'Freelancer',
+      from: 'Março 2019',
+      to: 'Fevereiro 2021',
+      companyLink: 'https://www.upwork.com/freelancers/~01164223e728cbb0cc',
+    },
+    {
+      company: 'DGnet Watchdog',
+      position: 'Estagiario em Desenvolvimento de Sistemas Python',
+      from: 'Setembro 2019',
+      to: 'Julho 2020',
+      companyLink: 'https://damianoglobal.com/dgnet-watchdog',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      
+      name: 'Google IT Automation with Python Professional Certificate ',
+      body: 'Certificado de Automação de TI em Python emitido pelo Google',
+      year: 'Agosto de 2020',
+      link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/BDFTQVHE3DND',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'UniFOA',
+      degree: 'Bacharel em Sistemas De Informação',
+      from: '2018',
+      to: '2020',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Análise e Desenvolvimento de Sistemas',
+      degree: 'Tecnólogo em análise e desenvolvimento de sistemas',
+      from: '2020',
+      to: '2021',
     },
   ],
+  /*
   publications: [
     {
       title: 'Publication Title',
@@ -155,7 +192,7 @@ const CONFIG = {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
-  ],
+  ],*/
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
