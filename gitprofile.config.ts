@@ -60,7 +60,7 @@ const CONFIG = {
         {
           title: 'Implantação De Wazuh',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Implementei a ferramenta Wazuh nas empresas da Modernização e Didática para fortalecer a segurança da informação. Com ela, foi possível centralizar o monitoramento, detectar ameaças em tempo real, analisar logs e garantir a integridade dos sistemas. O resultado foi uma resposta mais rápida a incidentes, maior controle do ambiente e alinhamento com requisitos de conformidade.',
           imageUrl:
             'https://wazuh.com/wp-content/themes/wazuh-v3/assets/images/home/siem-dashboard.png?ver=1744815409521',
           link: 'https://example.com',
@@ -208,7 +208,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'dim',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -229,33 +229,14 @@ const CONFIG = {
       'bumblebee',
       'emerald',
       'corporate',
-      'synthwave',
       'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
       'wireframe',
       'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
       'business',
       'acid',
       'lemonade',
       'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'procyon',
+ 
     ],
 
     // Custom theme, applied to `procyon` theme
